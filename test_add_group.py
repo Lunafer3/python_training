@@ -8,6 +8,7 @@ from selenium.common.exceptions import NoAlertPresentException
 import unittest
 from group import Group
 
+
 class test_add_group(unittest.TestCase):
     def setUp(self):
         self.wd = webdriver.Firefox()
