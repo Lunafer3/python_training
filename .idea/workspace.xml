@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f73a4082-ff46-4cde-b173-9e2e9befa16a" name="Changes" comment="ДЗ № 3">
+    <list default="true" id="f73a4082-ff46-4cde-b173-9e2e9befa16a" name="Changes" comment="небольшое улучшение читаемости тестов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_add_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
       <recent name="C:\Users\19lun\PycharmProjects\python_training\env" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_add_contact.py">
+  <component name="RunManager" selected="Python tests.Python tests in test_add_group.py">
     <configuration name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,8 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_add_contact.py" />
         <item itemvalue="Python tests.Python tests in test_add_group.py" />
+        <item itemvalue="Python tests.Python tests in test_add_contact.py" />
         <item itemvalue="Python.test1" />
         <item itemvalue="Python.test_add_group" />
       </list>
@@ -277,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643190562051</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="небольшое улучшение читаемости тестов">
+      <created>1643293774305</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643293774305</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +315,7 @@
     <MESSAGE value="Создал для контактов тест" />
     <MESSAGE value="Создание контактов" />
     <MESSAGE value="ДЗ № 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ № 3" />
+    <MESSAGE value="небольшое улучшение читаемости тестов" />
+    <option name="LAST_COMMIT_MESSAGE" value="небольшое улучшение читаемости тестов" />
   </component>
 </project>
