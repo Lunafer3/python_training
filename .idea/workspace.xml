@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f73a4082-ff46-4cde-b173-9e2e9befa16a" name="Changes" comment="DZ 4  corrected">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python_training.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_training.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/group.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_add_group.py" beforeDir="false" />
-    </list>
+    <list default="true" id="f73a4082-ff46-4cde-b173-9e2e9befa16a" name="Changes" comment="DZ 4  corrected" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -304,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643293774305</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="DZ 4  corrected">
+      <created>1653134276253</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1653134276254</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +321,7 @@
     <MESSAGE value="Создание контактов" />
     <MESSAGE value="ДЗ № 3" />
     <MESSAGE value="небольшое улучшение читаемости тестов" />
-    <option name="LAST_COMMIT_MESSAGE" value="небольшое улучшение читаемости тестов" />
+    <MESSAGE value="DZ 4  corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="DZ 4  corrected" />
   </component>
 </project>
