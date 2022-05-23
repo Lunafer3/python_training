@@ -4,23 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f73a4082-ff46-4cde-b173-9e2e9befa16a" name="Changes" comment="DZ 6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+    <list default="true" id="f73a4082-ff46-4cde-b173-9e2e9befa16a" name="Changes" comment="домашняя работа №6">
       <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_contact/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_contact/test_add_contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_contact/test_del_contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_contact/test_modify_contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_group/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_group/test_add_group.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_group/test_del_group.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_group/test_modify_group.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -401,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653140970123</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="домашняя работа №6">
+      <created>1653293976351</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1653293976351</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,6 +433,7 @@
     <MESSAGE value="DZ 5" />
     <MESSAGE value="DZ 4 corrected_v2" />
     <MESSAGE value="DZ 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="DZ 6" />
+    <MESSAGE value="домашняя работа №6" />
+    <option name="LAST_COMMIT_MESSAGE" value="домашняя работа №6" />
   </component>
 </project>
