@@ -12,12 +12,9 @@ class Application:
         self.group = GroupHelper(self)
         self.contact = ContactHelper(self)
 
-    def is_valid(self):
-        try:
-            self.wd.current_url()
-            return True
-        except:
-            return False
+    def return_to_home_page(self):
+        wd = self.wd
+        wd.find_element_by_link_text("home").click()
 
     def open_home_page(self):
         wd = self.wd
