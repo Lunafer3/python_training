@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f73a4082-ff46-4cde-b173-9e2e9befa16a" name="Changes" comment="dz 7">
+    <list default="true" id="f73a4082-ff46-4cde-b173-9e2e9befa16a" name="Changes" comment="dz 9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_contact/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_contact/test_add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_contact/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_contact/test_del_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_contact/test_modify_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_contact/test_modify_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_group/test_add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_group/test_add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_group/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_group/test_del_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_group/test_modify_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_group/test_modify_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,28 +73,7 @@
       <recent name="D:\python\python_training\model" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in test_del_contact.py">
-    <configuration name="contact" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="python_training" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/fixture" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fixture/contact.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests in test_add_contact.py">
     <configuration name="Python tests in test" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,6 +116,20 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_del_group.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="python_training" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/test_group" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_group/test_del_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in test_modify_contact.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="python_training" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -162,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_add_contact.py" />
+        <item itemvalue="Python tests.Python tests in test_del_group.py" />
         <item itemvalue="Python tests.Python tests in test_del_contact.py" />
         <item itemvalue="Python tests.Python tests in test" />
         <item itemvalue="Python tests.Python tests in test_modify_contact.py" />
-        <item itemvalue="Python tests.Python tests in test_add_contact.py" />
-        <item itemvalue="Python.contact" />
       </list>
     </recent_temporary>
   </component>
@@ -457,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653748772476</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="dz 9">
+      <created>1653751465061</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1653751465061</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +466,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Первый рабочий тест" />
     <MESSAGE value="Передача параметров в методы" />
     <MESSAGE value="Создание и выделение класса" />
     <MESSAGE value="ДЗ №2" />
@@ -500,6 +490,7 @@
     <MESSAGE value="Оптимизация ввода данных в формы для групп" />
     <MESSAGE value="dz 8" />
     <MESSAGE value="dz 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="dz 7" />
+    <MESSAGE value="dz 9" />
+    <option name="LAST_COMMIT_MESSAGE" value="dz 9" />
   </component>
 </project>
