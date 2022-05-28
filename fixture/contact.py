@@ -37,15 +37,14 @@ class ContactHelper:
             wd.find_element_by_name(field_name).clear()
             wd.find_element_by_name(field_name).send_keys(text)
 
-    def delete_first_contact(self, index):
+    def delete_first_contact(self):
         wd = self.app.wd
         self.open_contact_page()
         # select first contact
         self.select_first_contact()
         # submit deletion
-        wd.find_element_by_xpath("//input[@value='Delete']")[index].click()
+        wd.find_element_by_xpath("//input[@value='Delete']").click()
         wd.switch_to.alert.accept()
-        self.return_to_home_page()
 
     def select_first_contact(self):
         wd = self.app.wd
@@ -67,6 +66,8 @@ class ContactHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("home page").click()
 
-    def open_home_page(self):
+
+    def count(self):
         wd = self.app.wd
-        wd.get("https://localhost/addressbook/")
+        self.open_contact_page()
+        return len(wd.find_elements_by_name("selected[]"))
