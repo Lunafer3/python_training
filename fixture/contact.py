@@ -41,6 +41,7 @@ class ContactHelper:
         # submit contact
         wd.find_element_by_name("submit").click()
         self.returne_home_page()
+        self.contact_cache = None
 
     def edit_first_contact(self, new_contact_data):
         wd = self.app.wd
@@ -50,6 +51,7 @@ class ContactHelper:
         self.fill_contact(new_contact_data)
         wd.find_element_by_name("update").click()
         self.returne_home_page()
+        self.contact_cache = None
 
     def delete_first_contact(self):
         wd = self.app.wd
@@ -58,13 +60,17 @@ class ContactHelper:
         alert = wd.switch_to.alert
         alert.accept()
         self.returne_home_page()
+        self.contact_cache = None
+
+    contact_cache = None
 
     def get_contact_list(self):
-        wd = self.app.wd
-        self.returne_home_page()
-        contacts = []
-        for element in wd.find_elements_by_name("entry"):
-            id = element.find_element_by_name("selected[]").get_attribute("value")
-            firstname = element.find_element_by_css_selector("td:nth-child(3)").text
-            contacts.append(Contact(id=id, firstname=firstname))
-        return contacts
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.returne_home_page()
+            self.contact_cache = []
+            for element in wd.find_elements_by_name("entry"):
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                firstname = element.find_element_by_css_selector("td:nth-child(3)").text
+                self.contact_cache.append(Contact(id=id, firstname=firstname))
+        return list(self.contact_cache)

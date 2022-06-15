@@ -181,7 +181,7 @@
       <recent name="$PROJECT_DIR$/test" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test_del_contact.py">
+  <component name="RunManager" selected="Python tests.pytest in test">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -416,8 +416,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in test_del_contact.py" />
         <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest in test_del_contact.py" />
         <item itemvalue="Python tests.pytest in test_del_group.py" />
         <item itemvalue="Python tests.pytest in test_add_contact.py" />
         <item itemvalue="Python tests.py.test in test_edit_contact.py" />
@@ -442,7 +442,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655288401116</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Удалил неработающие тесты">
+      <created>1655289068170</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655289068170</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ДЗ 11">
+      <created>1655289217419</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655289217419</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -515,7 +529,9 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="добавлены проверки для редактирования контактов" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлены проверки для редактирования контактов" />
+    <MESSAGE value="Удалил неработающие тесты" />
+    <MESSAGE value="ДЗ 11" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 11" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
