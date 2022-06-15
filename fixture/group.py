@@ -50,6 +50,9 @@ class GroupHelper:
         self.returne_group_page()
         self.group_cache = None
 
+    def edit_first_group(self):
+        self.edit_group_by_index(0)
+
     def edit_group_by_index(self, index, new_group_data):
         wd = self.app.wd
         # open group page
@@ -64,6 +67,9 @@ class GroupHelper:
         # returne group page
         self.returne_group_page()
         self.group_cache = None
+
+    def delete_first_group(self):
+        self.delete_group_by_index(0)
 
     def delete_group_by_index(self, index):
         wd = self.app.wd

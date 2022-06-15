@@ -43,6 +43,9 @@ class ContactHelper:
         self.returne_home_page()
         self.contact_cache = None
 
+    def edit_first_contact(self):
+        self.edit_contact_by_index(0)
+
     def edit_contact_by_index(self, index, new_contact_data):
         wd = self.app.wd
         self.returne_home_page()
@@ -52,6 +55,9 @@ class ContactHelper:
         wd.find_element_by_name("update").click()
         self.returne_home_page()
         self.contact_cache = None
+
+    def delete_first_contact(self):
+        self.delete_contact_by_index(0)
 
     def delete_contact_by_index(self, index):
         wd = self.app.wd
