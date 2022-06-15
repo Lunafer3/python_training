@@ -46,20 +46,14 @@ class ContactHelper:
         wd = self.app.wd
         self.returne_home_page()
         self.select_first_contact()
-        # open edit form
         wd.find_element_by_xpath(".//*[@id='maintable']/tbody/tr[2]/td[8]/a/img").click()
-        # fill contact
         self.fill_contact(new_contact_data)
-        # update contact
         wd.find_element_by_name("update").click()
-        # return home page
         self.returne_home_page()
 
     def delete_first_contact(self):
         wd = self.app.wd
-        # self.returne_home_page()
         self.select_first_contact()
-        # delete group
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         alert = wd.switch_to.alert
         alert.accept()
@@ -72,6 +66,5 @@ class ContactHelper:
         for element in wd.find_elements_by_name("entry"):
             id = element.find_element_by_name("selected[]").get_attribute("value")
             firstname = element.find_element_by_css_selector("td:nth-child(3)").text
-            # lastname = element.find_elements_by_css_selector("td:nth-child(2)")
             contacts.append(Contact(id=id, firstname=firstname))
         return contacts
