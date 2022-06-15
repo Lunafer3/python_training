@@ -49,7 +49,7 @@ class GroupHelper:
         wd.find_element_by_name("submit").click()
         self.returne_group_page()
 
-    def edit_first_group(self,new_group_data):
+    def edit_first_group(self, new_group_data):
         wd = self.app.wd
         # open group page
         self.open_group_page()
@@ -80,5 +80,5 @@ class GroupHelper:
         for element in wd.find_elements_by_css_selector("span.group"):
             text = element.text
             id = element.find_element_by_name("selected[]").get_attribute("value")
-            groups.append(Group(gr_name=text,id=id))
+            groups.append(Group(gr_name=text, id=id))
         return groups
