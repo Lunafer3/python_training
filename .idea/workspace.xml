@@ -59,7 +59,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="5" />
@@ -327,22 +327,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="py.test in test_edit_contact.py" type="tests" factoryName="py.test" temporary="true">
-      <module name="test_py" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="pytest in test" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="test_py" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -356,22 +340,6 @@
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest in test_add_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="test_py" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_parameters" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_add_contact.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
@@ -407,20 +375,52 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in test_edit_contact.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="test_py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_edit_contact.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in test_edit_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="test_py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/env/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/test_edit_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Python tests.pytest in test_edit_contact.py" />
+      <item itemvalue="Python tests.pytest in test_edit_group.py" />
       <item itemvalue="Python tests.pytest in test_del_group.py" />
       <item itemvalue="Python tests.pytest in test" />
-      <item itemvalue="Python tests.pytest in test_add_contact.py" />
       <item itemvalue="Python tests.pytest in test_del_contact.py" />
-      <item itemvalue="Python tests.py.test in test_edit_contact.py" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in test" />
+        <item itemvalue="Python tests.pytest in test_edit_contact.py" />
+        <item itemvalue="Python tests.pytest in test_edit_group.py" />
         <item itemvalue="Python tests.pytest in test_del_contact.py" />
         <item itemvalue="Python tests.pytest in test_del_group.py" />
-        <item itemvalue="Python tests.pytest in test_add_contact.py" />
-        <item itemvalue="Python tests.py.test in test_edit_contact.py" />
       </list>
     </recent_temporary>
   </component>
@@ -456,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655289217419</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ДЗ 12">
+      <created>1655291351708</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1655291351708</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -531,7 +538,8 @@
     <MESSAGE value="добавлены проверки для редактирования контактов" />
     <MESSAGE value="Удалил неработающие тесты" />
     <MESSAGE value="ДЗ 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 11" />
+    <MESSAGE value="ДЗ 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 12" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
