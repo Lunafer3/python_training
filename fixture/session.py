@@ -4,39 +4,40 @@ class SessionHelper:
         self.app = app
 
     def login(self, username, password):
+        # login
         wd = self.app.wd
-        self.app.open_home_page()
+        self.app.open_site()
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
-        wd.find_element_by_name("user").send_keys(username)
+        wd.find_element_by_name("user").send_keys("%s" % username)
         wd.find_element_by_name("pass").click()
         wd.find_element_by_name("pass").clear()
-        wd.find_element_by_name("pass").send_keys(password)
-        wd.find_element_by_css_selector("input[type=\"submit\"]").click()
+        wd.find_element_by_name("pass").send_keys("%s" % password)
+        wd.find_element_by_xpath("//form[@id='LoginForm']/input[3]").click()
+
+    def is_logged_in(self):
+        wd = self.app.wd
+        return len(wd.find_elements_by_link_text("Logout")) > 0
+
+    def is_logged_in_as(self, username):
+        wd = self.app.wd
+        return wd.find_element_by_xpath("//div/div[1]/form/b").text == "("+username+")"
 
     def logout(self):
+        # logout
         wd = self.app.wd
-        wd.find_element_by_xpath("//a[contains(text(),'Logout')]").click()
-        wd.find_element_by_name("user")
+        wd.find_element_by_link_text("Logout").click()
 
     def ensure_logout(self):
         wd = self.app.wd
-        """ if self.is_logged_in():"""
-        self.logout()
-
-    """def is_logged_in(self):
-        wd = self.app.wd
-        return len(wd.find_elements_by_xpath("//a[contains(text(),'Logout')]")) > 0"""
-
-    """def is_logged_in_as(self, username):
-        wd = self.app.wd
-        return wd.find_element_by_xpath("//div/div[1]/form/b").text == "(" + username + ")"""""
+        if self.is_logged_in():
+            self.logout()
 
     def ensure_login(self, username, password):
         wd = self.app.wd
-        """if self.is_logged_in():
+        if self.is_logged_in():
             if self.is_logged_in_as(username):
                 return
             else:
-                self.logout()"""
+                self.logout()
         self.login(username, password)
