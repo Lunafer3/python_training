@@ -1,12 +1,11 @@
-import getopt
-import os.path
 import random
 import string
+import os.path
+import getopt
 import sys
-
 import jsonpickle
-
 from model.contact import Contact
+
 
 try:
     opts, args = getopt.getopt(sys.argv[1:], "n:f:", ["number of contacts", "file"])
@@ -14,7 +13,7 @@ except getopt.GetoptError as err:
     getopt.usage()
     sys.exit(2)
 
-n = 1
+n = 5
 f = "data/contacts.json"
 
 for o, a in opts:
@@ -29,11 +28,11 @@ def random_string(prefix, maxlen):
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 
-testdata = [Contact(firstname="test", middlename="test", lastname="test",
-                    nickname="test", title="test",
-                    company="test", address="test",
-                    home="333", mobile="777", work="999", phone2="111",
-                    email="test", email2="test", email3="test")] + [
+testdata = [Contact(firstname="", middlename="", lastname="",
+                    nickname="", title="",
+                    company="", address="",
+                    home="", mobile="", work="", phone2="",
+                    email="", email2="", email3="")] + [
                Contact(firstname=random_string("firstname", 15), middlename=random_string("middlename", 20),
                        lastname=random_string("lastname", 15),
                        nickname=random_string("nick", 25), title=random_string("title", 15),
@@ -47,6 +46,7 @@ testdata = [Contact(firstname="test", middlename="test", lastname="test",
            ]
 
 file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", f)
+
 
 with open(file, "w") as out:
     jsonpickle.set_encoder_options("json", indent=2)
