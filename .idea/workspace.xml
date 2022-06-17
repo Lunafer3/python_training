@@ -474,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655291351708</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Не работает дорботать">
+      <created>1655491808461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655491808461</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -561,7 +568,9 @@
     <MESSAGE value="Удалил неработающие тесты" />
     <MESSAGE value="ДЗ 11" />
     <MESSAGE value="ДЗ 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 12" />
+    <MESSAGE value="Не работает дорботать" />
+    <MESSAGE value="Что-то сделал и оно заработало" />
+    <option name="LAST_COMMIT_MESSAGE" value="Что-то сделал и оно заработало" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
