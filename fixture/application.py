@@ -1,5 +1,4 @@
 from selenium.webdriver.firefox.webdriver import WebDriver
-
 from fixture.contact import ContactHelper
 from fixture.group import GroupHelper
 from fixture.session import SessionHelper
@@ -20,10 +19,9 @@ class Application:
         except:
             return False
 
-    def open_site(self):
-        # open site
+    def open_home_page(self):
         wd = self.wd
-        wd.get("http://localhost/addressbook/index.php")
+        wd.get("http://localhost/addressbook")
 
     def destroy(self):
         self.wd.quit()
