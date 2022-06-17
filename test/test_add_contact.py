@@ -1,6 +1,7 @@
+import random
+
 from model.contact import Contact
 from model.group import Group
-import random
 
 
 def test_add_contact(app, db, json_contacts, check_ui):

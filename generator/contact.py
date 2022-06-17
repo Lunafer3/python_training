@@ -1,11 +1,12 @@
+import getopt
+import os.path
 import random
 import string
-import os.path
-import getopt
 import sys
-import jsonpickle
-from model.contact import Contact
 
+import jsonpickle
+
+from model.contact import Contact
 
 try:
     opts, args = getopt.getopt(sys.argv[1:], "n:f:", ["number of contacts", "file"])
@@ -46,7 +47,6 @@ testdata = [Contact(firstname="test", middlename="test", lastname="test",
            ]
 
 file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", f)
-
 
 with open(file, "w") as out:
     jsonpickle.set_encoder_options("json", indent=2)
