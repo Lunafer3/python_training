@@ -1,5 +1,6 @@
-from model.contact import Contact
 from random import randrange
+
+from model.contact import Contact
 
 
 def test_modify_first_contact_firstname(app):

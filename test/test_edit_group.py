@@ -1,5 +1,6 @@
-from model.group import Group
 from random import randrange
+
+from model.group import Group
 
 
 def test_modify_group_name(app):
