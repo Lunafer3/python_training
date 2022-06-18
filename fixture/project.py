@@ -29,7 +29,6 @@ class ProjectHelper:
         cells = element.find_elements_by_tag_name("td")
         return len(cells[0].text)
 
-
     def del_project(self, name):
         wd = self.app.wd
         self.open_project_page()
@@ -56,7 +55,6 @@ class ProjectHelper:
         self.open_project_page()
         list = wd.find_elements_by_css_selector("div.col-md-12>div.widget-box div.table-responsive tbody tr")
         return len(list)
-
 
     project_cache = None
 
