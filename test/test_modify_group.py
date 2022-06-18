@@ -1,5 +1,6 @@
-from model.group import Group
 from random import randrange
+
+from model.group import Group
 
 
 def test_modify_group_name(app):
@@ -26,6 +27,3 @@ def test_modify_group_header(app):
     app.group.modify_group_by_index(index, group)
     new_groups = app.group.get_group_list()
     assert len(old_groups) == len(new_groups)
-
-
-
