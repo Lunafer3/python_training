@@ -1,19 +1,21 @@
-from model.project import Project
+import getopt
+import os.path
 import random
 import string
-import os.path
-import jsonpickle
-import getopt
 import sys
 
+import jsonpickle
+
+from model.group import Group
+
 try:
-    opts, args = getopt.getopt(sys.argv[1:], "n:f:", ["number of project", "file"])
+    opts, args = getopt.getopt(sys.argv[1:], "n:f:", ["number of groups", "file"])
 except getopt.GetoptError as err:
     getopt.usage()
     sys.exit(2)
 
 n = 1
-f = "data/project.json"
+f = "data/groups.json"
 
 for o, a in opts:
     if o == "-n":
@@ -27,19 +29,8 @@ def random_string(prefix, maxlen):
     return prefix + "".join([random.choice(symbols) for i in range(random.randrange(maxlen))])
 
 
-def random_status():
-    status = ['development', 'release', 'stable', 'obsolete']
-    return "".join([random.choice(status)])
-
-
-def random_view_state():
-    view_status = ['public', 'private']
-    return "".join([random.choice(view_status)])
-
-
-testdata = [
-    Project(name=random_string("name", 10), status=random_status(), view_state=random_view_state(),
-            description=random_string("description", 20))
+testdata = [Group(name="test", header="test", footer="test")] + [
+    Group(name=random_string("name", 10), header=random_string("header", 20), footer=random_string("footer", 20))
     for i in range(n)
 ]
 

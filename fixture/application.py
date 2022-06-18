@@ -1,6 +1,7 @@
 from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.firefox.webdriver import WebDriver
 from selenium.webdriver.ie import webdriver
+
 from fixture.contact import ContactHelper
 from fixture.group import GroupHelper
 from fixture.session import SessionHelper
@@ -16,13 +17,11 @@ class Application:
             self.wd = webdriver.Ie()
         else:
             raise ValueError("Unrecognized browser %s" % browser)
-        self.wd.implicitly_wait(2)
         self.session = SessionHelper(self)
-        self.project = ProjectHelper(self)
-        self.soap = SoapHelper(self)
-        self.config = config
-        self.base_url = config['web']['base_url']
-
+        self.group = GroupHelper(self)
+        self.contact = ContactHelper(self)
+        self.base_url = base_url
+        self.base_password = base_password
 
     def is_valid(self):
         try:
