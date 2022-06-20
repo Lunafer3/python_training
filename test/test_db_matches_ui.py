@@ -1,7 +1,6 @@
-from timeit import timeit
-
-from model.contact import Contact
 from model.group import Group
+from model.contact import Contact
+from timeit import timeit
 
 
 def test_group_list(app, db):
