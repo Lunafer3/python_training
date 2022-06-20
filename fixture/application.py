@@ -1,7 +1,6 @@
-from selenium.webdriver.chrome import webdriver
+from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.firefox.webdriver import WebDriver
-from selenium.webdriver.ie import webdriver
-
+from selenium.webdriver.ie.webdriver import WebDriver
 from fixture.contact import ContactHelper
 from fixture.group import GroupHelper
 from fixture.session import SessionHelper
@@ -12,9 +11,9 @@ class Application:
         if browser == "firefox":
             self.wd = WebDriver()
         elif browser == "chrome":
-            self.wd = webdriver.Chrome()
+            self.wd = WebDriver()
         elif browser == "ie":
-            self.wd = webdriver.Ie()
+            self.wd = WebDriver()
         else:
             raise ValueError("Unrecognized browser %s" % browser)
         self.session = SessionHelper(self)

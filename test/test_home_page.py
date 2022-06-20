@@ -84,4 +84,3 @@ def test_all_contact_home_page_db(app, db, check_ui):
         print(str(i))
         print(db_contacts[i])
         print(contacts_from_home_page[i])
-

@@ -1,6 +1,7 @@
+import random
+
 from model.contact import Contact
 from model.group import Group
-import random
 
 
 def test_delete_some_contact(app, db, check_ui):
@@ -18,19 +19,16 @@ def test_delete_some_contact(app, db, check_ui):
                                                                      key=Contact.id_or_max)
 
 
-def test_delete_some_contact_in_groups(app, orm, db):
+def test_delete_some_contact_in_groups(app, db):
     if len(db.get_contact_list()) == 0:
         app.contact.create(Contact(firstname="test"))
     if len(db.get_group_list()) == 0:
         app.group.create(Group(name="test"))
     contacts = db.get_contact_list()
-    contact0 = random.choice(contacts)
+    contact = random.choice(contacts)
     groups = db.get_group_list()
     group = random.choice(groups)
-    if contact0.id in group.name:
-        app.delete_contact_in_group(contact0.id, group.name)
-    else:
-        app.contact.add_contact_in_group(contact0.id, group.name)
-        app.contact.delete_contact_in_group(contact0.id, group.name)
-    new_contacts_in_group = orm.get_contacts_in_group(group)
-    assert Contact not in new_contacts_in_group
+    contacts_in_group = db.get_contact_list()
+    if contacts_in_group == []:
+        app.contact.add_contact_in_group(contact.id, group.name)
+    app.contact.delete_contact_in_group(contact.id, group.name)
