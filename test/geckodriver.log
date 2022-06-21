@@ -7,3 +7,11 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 1655833644686	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 DevTools listening on ws://localhost:65027/devtools/browser/7ca228a9-eb5c-4447-a84b-fb116a06f5c8
 JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1655834994460	Marionette	INFO	Stopped listening on port 65033
+[Parent 2296, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+[Parent 2296, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 2296, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
