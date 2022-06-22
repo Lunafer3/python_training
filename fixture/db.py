@@ -1,7 +1,6 @@
 import pymysql.cursors
-
-from model.contact import Contact
 from model.group import Group
+from model.contact import Contact
 
 
 class DbFixture:
@@ -33,7 +32,7 @@ class DbFixture:
             for row in cursor:
                 (id, firstname, middlename, lastname, address, home, mobile, work, phone2, email, email2, email3) = row
                 list.append(Contact(id=str(id), firstname=firstname, middlename=middlename, lastname=lastname,
-                                    address=address, home=home, mobile=mobile, work=work, phone2=phone2, email=email,
+                                    address=address, home=home,mobile=mobile, work=work, phone2=phone2, email=email,
                                     email2=email2, email3=email3))
         finally:
             cursor.close()

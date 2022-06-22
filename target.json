@@ -4,11 +4,13 @@
     "username": "admin",
     "password": "secret"
   },
+
   "db": {
     "host": "localhost",
     "name": "addressbook",
     "user": "root",
     "password": ""
   }
+
 }
 
