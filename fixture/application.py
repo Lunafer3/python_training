@@ -1,19 +1,19 @@
-from selenium import webdriver
-from fixture.session import SessionHelper
-from fixture.group import GroupHelper
+from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium.webdriver.firefox.webdriver import WebDriver
+from selenium.webdriver.ie.webdriver import WebDriver
 from fixture.contact import ContactHelper
-from fixture.orm import ORMFixture
+from fixture.group import GroupHelper
+from fixture.session import SessionHelper
 
 
 class Application:
-
-    def __init__(self, browser, base_url):
+    def __init__(self, browser, base_url, base_password):
         if browser == "firefox":
-            self.wd = webdriver.Firefox()
+            self.wd = WebDriver()
         elif browser == "chrome":
-            self.wd = webdriver.Chrome()
+            self.wd = WebDriver()
         elif browser == "ie":
-            self.wd = webdriver.Ie()
+            self.wd = WebDriver()
         else:
             raise ValueError("Unrecognized browser %s" % browser)
         self.session = SessionHelper(self)
@@ -35,4 +35,3 @@ class Application:
 
     def destroy(self):
         self.wd.quit()
-
